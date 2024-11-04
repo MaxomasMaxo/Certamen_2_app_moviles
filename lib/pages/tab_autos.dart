@@ -106,6 +106,7 @@ class _TabAutosState extends State<TabAutos> {
           );
         },
         child: Icon(Icons.add),
+        backgroundColor: Color(0xFF008452),
       ),
     );
   }

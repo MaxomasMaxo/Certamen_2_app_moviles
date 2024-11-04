@@ -12,7 +12,7 @@ class DrawerScreen extends StatelessWidget {
         children: [
           DrawerHeader(
             decoration: BoxDecoration(
-              color: Colors.blue,
+              color: Color(0xFF004B85),
             ),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,

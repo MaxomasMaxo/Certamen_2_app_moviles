@@ -27,6 +27,7 @@ class AutosDetalles extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Detalles del Auto'),
+        backgroundColor: Color(0xFF008452),
       ),
       body: Container(
         color: Colors.grey[100],
@@ -91,7 +92,7 @@ class AutosDetalles extends StatelessWidget {
                     width: double.infinity,
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.red,
+                        backgroundColor: Color(0xFFD60019),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.zero,
                         ),
@@ -117,7 +118,7 @@ class AutosDetalles extends StatelessWidget {
                           Icon(Icons.delete, color: Colors.white),
                           SizedBox(width: 8),
                           Text(
-                            'Eliminar',
+                            'Borrar',
                             style: TextStyle(
                               fontSize: 18,
                               color: Colors.white,

@@ -19,7 +19,8 @@ class _AutosAgregarState extends State<AutosAgregar> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Agregar Auto'),
+        backgroundColor: Color(0xFFF7AE00),
+        title: Text('Agregar Auto',style: TextStyle(color: Colors.white)),
       ),
       body: Padding(
         padding: EdgeInsets.all(5),
@@ -76,7 +77,7 @@ class _AutosAgregarState extends State<AutosAgregar> {
               width: double.infinity,
               child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.lightBlueAccent),
+                      backgroundColor: Color(0xFFD60019)),
                   onPressed: () {
                     double precio = double.parse(precioCtrl.value.text);
                     if (precio >= 0 && marcaCtrl != null) {
@@ -89,7 +90,9 @@ class _AutosAgregarState extends State<AutosAgregar> {
                       );
                     }
                   },
-                  child: Text('Agregar Marca')),
+                  child: Text('Agregar Auto',
+                    style: TextStyle(color: Colors.white)),
+                  ),
             )
           ],
         ),

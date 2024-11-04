@@ -12,7 +12,8 @@ class TabsPage extends StatelessWidget {
       length: 2, 
       child: Scaffold(
         appBar: AppBar(
-          title: Text('API AUTOS'),
+          title: Text('API AUTOS',style: TextStyle(color: Colors.white)),
+          backgroundColor: Color(0xFFF7AE00),
           leading: Builder(
             builder: (BuildContext context) {
               return IconButton(
@@ -23,9 +24,12 @@ class TabsPage extends StatelessWidget {
             },
           ),
           bottom: TabBar(tabs: [
-            Tab(text: 'Marcas'),
+            Tab(text: 'Marcas',),
             Tab(text: 'Autos')
-          ]),
+          ])
+          ,
+          
+          
         ),
         drawer: DrawerScreen(),
         body: TabBarView(
